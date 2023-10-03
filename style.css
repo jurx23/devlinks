@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+}
+
+body {
+    /* Image
+       Repeat
+       Position
+       Size */
+    background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+}
+
+#container {
+    width: 360px; /* Na maioria das vezes não se coloca altura dos elementos em css pois ela vai se completando altomaticamente */
+    margin: 56px auto 0px; /* Essa propriedade e valor servem para centralizar apenas horizontalmente um elemento de tamanho fixo */
+    padding: 0 24px;
+}
+
+#perfil {
+    padding: 24px;
+}
+
+#perfil img {
+    width: 112px;
+    display: block;
+    margin: auto;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+#perfil p {
+    text-align: center;
+    font-weight: 500;
+    line-height: 24px;
+    padding-top: 8px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /*Espaçamento entre os elementos filhos*/
+    padding: 24px 0;
+}
+
+ul li a{
+    display: flex; /* Deixa os elementos em linha de uma maneira flexivel, ou seja eles meio que se alinham automaticamente */
+    align-items: center; /* Isso alinha o elemento verticalmente */
+    justify-content: center; /* Isso alinha o elemento horizontalmente */
+    padding: 16px 24px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+ul li a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid #ffffff;
+}
+
+#redesSociais {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    font-size: 24px;
+}
+
+#redesSociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    transition: background 0.2s;
+    border-radius: 50%;
+}
+
+#redesSociais a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+footer {
+    padding: 24px 0;
+    text-align: center;
+    font-size: 14px;
+}
