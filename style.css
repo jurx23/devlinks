@@ -4,21 +4,23 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-url: url(./assets/bg-mobile.jpg);
+}
+
+body {
+    background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
+}
+
 body * {
     font-family: 'Inter', sans-serif;
     color: #ffffff;
 }
 
-body {
-    /* Image
-       Repeat
-       Position
-       Size */
-    background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
-}
-
 #container {
-    width: 360px; /* Na maioria das vezes não se coloca altura dos elementos em css pois ela vai se completando altomaticamente */
+    width: 100%; /* Na maioria das vezes não se coloca altura dos elementos em css pois ela vai se completando altomaticamente */
+    max-width: 588px;
     margin: 56px auto 0px; /* Essa propriedade e valor servem para centralizar apenas horizontalmente um elemento de tamanho fixo */
     padding: 0 24px;
 }
@@ -95,4 +97,12 @@ footer {
     padding: 24px 0;
     text-align: center;
     font-size: 14px;
+}
+
+/* Media queries */
+
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(./assets/bg-desktop.jpg);
+    }
 }
