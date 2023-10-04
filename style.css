@@ -5,6 +5,7 @@
 }
 
 :root {
+    --text-color: white;
     --bg-url: url(./assets/bg-mobile.jpg);
 }
 
@@ -15,7 +16,7 @@ body {
 
 body * {
     font-family: 'Inter', sans-serif;
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 #container {
@@ -67,7 +68,7 @@ ul li a{
 
 ul li a:hover {
     background: rgba(255, 255, 255, 0.05);
-    border: 1.5px solid #ffffff;
+    border: 1.5px solid var(--text-color);
 }
 
 #redesSociais {
@@ -88,7 +89,6 @@ ul li a:hover {
 
 #redesSociais a:hover {
     background: rgba(255, 255, 255, 0.2);
-    /* border-radius: 50%; */
 }
 
 footer {
