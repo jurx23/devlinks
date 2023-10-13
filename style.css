@@ -6,12 +6,10 @@
 
 :root {
     --text-color: white;
-    /* --bg-url: url(./assets/bg-mobile.jpg); */
-    --bg-color: #6634b8;
 }
 
 body {
-    background: var(--bg-color) no-repeat top center/cover;
+    background-image: linear-gradient(135deg, rgb(181, 20, 20), black 80%);
     height: 100vh;
 }
 
@@ -22,7 +20,7 @@ body * {
 
 #container {
     width: 100%; /* Na maioria das vezes não se coloca altura dos elementos em css pois ela vai se completando altomaticamente */
-    max-width: 588px;
+    max-width: 600px;
     margin: 56px auto 0px; /* Essa propriedade e valor servem para centralizar apenas horizontalmente um elemento de tamanho fixo */
     padding: 0 24px;
 }
@@ -96,12 +94,4 @@ footer {
     padding: 24px 0;
     text-align: center;
     font-size: 14px;
-}
-
-/* Media queries */
-
-@media (min-width: 700px) {
-    :root {
-        --bg-url: url(./assets/bg-desktop.jpg);
-    }
 }
