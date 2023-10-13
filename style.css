@@ -9,7 +9,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, rgb(181, 20, 20), black 70%) no-repeat;
+    background: linear-gradient(135deg, rgb(181, 20, 20), black 70%);
     height: 100vh;
 }
 
@@ -62,12 +62,13 @@ ul li a{
     -webkit-backdrop-filter: blur(4px);
     text-decoration: none;
     font-weight: 500;
-    transition: background 0.2s;
+    transition: transform 0.1s ease-in;
 }
 
 ul li a:hover {
     background: rgba(255, 255, 255, 0.05);
     border: 1.5px solid var(--text-color);
+    transform: scale(1.1);
 }
 
 #redesSociais {
